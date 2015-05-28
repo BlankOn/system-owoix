@@ -1,5 +1,3 @@
-# system-owoix
-manokwari system 
+#System-OIX
 
-- OpenWeatherMaps link weather data http://openweathermap.org/
-- Player button slider
+Manokwari Desktop System Theme
