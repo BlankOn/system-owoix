@@ -82,9 +82,9 @@
 	padding: 5px;
 	float:center;
 	background: #333;
-	border: 1px solid #111;
+	border: 2px solid #111;
 	border-radius:50px;
-	box-shadow: 0 0 1px #000;
+/*	box-shadow: 0 0 1px #000;*/
 }
 #buttons #prev img, #buttons #next img, #buttons #stop img, #buttons #repeat img {
 	width: 18px;
@@ -96,29 +96,29 @@
 	height: 18px;
 	padding:5px;
 	background: #333;
-	border: 1px solid #111;
+	border: 2px solid #111;
 	border-radius: 20px;
-	box-shadow: 0 0 1px #000;
+/*	box-shadow: 0 0 1px #000;*/
 }
 #buttons #prev {
 	width: auto;
 	margin:0;
 	padding: 5px 25px 5 10px;
 	background: #333;
-	border: 1px solid #111;
+	border: 2px solid #111;
 	border-top-left-radius:20px;
 	border-bottom-left-radius:20px;
-	box-shadow: 0 0 1px #000;
+/*	box-shadow: 0 0 1px #000;*/
 }
 #buttons #next {
 	width: auto;
 	padding: 5px 10px 5 25px;
 	margin:0;
 	background: #333;
-	border: 1px solid #111;
+	border: 2px solid #111;
 	border-top-right-radius:20px;
 	border-bottom-right-radius:20px;
-	box-shadow: 0 0 1px #000;
+/*	box-shadow: 0 0 1px #000;*/
 }
 #buttons li {
 	display: inline-block;
