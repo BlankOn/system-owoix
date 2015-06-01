@@ -2,74 +2,54 @@
 	width: 100%;
 	height: auto;
 	margin-top: 0;
-/*	box-shadow: 0 1px 1px #000;*/
-	border-bottom: 2px solid #0F0F0F;
+	box-shadow: 0 1px 0px #000;
 	background-color: #151515;
-	color: #bbb;
 	text-align:center;
 	border-bottom-left-radius:2px;
 	border-bottom-right-radius:2px;
 }
 li {
 	display:inline-block;
-	margin: 8px;
-	position: relative;
-	left: 0px;
-	text-align:center;
-	border-radius: 50px;
+    margin: 6px 8px;
+    position: relative;
+    left: 0px;
+    text-align:center;
+    border-radius: 50px;
 }
 li img {
-	width: 26px;
-	height: 26px;
-	margin: -6px -5px 0px -11px;
+	width: 22px;
+	height: 22px;
+	margin: -5px -5px 0px -11px;
 	padding: 4px;
 	cursor:pointer;
 	border-radius: 50px;
-	background-color: #333;
+	box-shadow: inset 0px 0px 50px #333;
+	opacity: 0.8;
 }
 li:hover img {
-	background-color: #555;
+	opacity:1;
 }
-li h2{
+li h2, li span {
 	display:none;
-	color: #1A1A1A;
-	height:18px;
-	padding: 2px 4px 2px 4px;
-	position:absolute;
+	color: #bbb;
+	padding: 4px;
 }
-li:hover h2 {
+li:hover span, li:hover h2 {
 	content:"";
 	display:block;
-	font-family: Cantarell;
-	border-radius: 5px;
-	margin: -38px 0 0 -20px ;
+	position:fixed;
+	font-family: Aurulent Sans;
+	text-align:left;
+	border-radius: 4px;
+	left:10px;
+}
+li:hover h2 {
+	margin: 35px 0 0;
 	font-size:0.9em;
-	background: #fff;
 }
-[data-tap-handler=handleLockScreen] h2{
-	margin-left:-27px !important;
-}
-[data-tap-handler=handleLogOut] h2{
-	margin-left:-15px !important;
-}
-[data-tap-handler=handleReboot] h2{
-	margin-left:-16px !important;
-}
-[data-tap-handler=handleShutDown] h2{
-	margin-left:-23px !important;
-}
-
-
-li:hover:before{
-	content: "";
-	width: 0px;
-	height: 0px;
-	border-width: 6px;
-	border-style:solid;
-	border-color: #fff transparent transparent transparent;
-	margin: -10px 0 0 -6px;
-	position: absolute;
-	z-index: 110;
+li:hover span {
+	margin: 52px 0 0;
+	font-size:0.8em;
 }
 
 /***********************************

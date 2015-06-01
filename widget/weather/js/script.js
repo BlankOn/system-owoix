@@ -88,7 +88,7 @@ function generateStats(data, callback) {
 	}
 }
 
-function render(location) {
+function render(location){
 	$('.border .sync').addClass('busy');
 	$(".border .settings").show()
 
