@@ -21,6 +21,7 @@ body {
 	height: 100%;
 }
 
+/** activated #bg if mutter as window manager **/
 /*#bg {
 	background-color: transparent;
 	position: absolute;
