@@ -235,4 +235,14 @@ $(document).ready(function() {
     //    desktop.setBackground("file:///Users/diorahman/Experiments/projects/blankon/dir/temp/themes/Adwaita/backgrounds/good-night.jpg");
     // }, 1000);
 
+		// Prevent drag and drop to desktop background
+    window.addEventListener("dragover",function(e){
+      e = e || event;
+      e.preventDefault();
+    },false);
+    window.addEventListener("drop",function(e){
+      e = e || event;
+      e.preventDefault();
+    },false);
+
 });
