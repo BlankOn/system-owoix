@@ -63,7 +63,7 @@
 			if(e.which==13){
 				var a = $(list).find(".ui-listview-item:visible").first().children().attr('desktop');
         if (a == undefined) {
-				  Utils.run_command(filter);
+				  Utils.run_command("gnome-terminal -e \'" + filter + "\'");
         } else {
 				  Utils.run_desktop(a);
         }
