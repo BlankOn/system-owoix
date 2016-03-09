@@ -27,6 +27,7 @@
 		});
 	}
 	var typingTimeout;
+  var filter;
 	function listFilter(header, list) { 
 	// header is any element, list is an unordered list
    // create and add the filter form to the header
@@ -37,7 +38,7 @@
      $(input)
 		.click( function(){firstCond();})
 		.keyup( function () {
-			var filter = $(this).val();
+			filter = $(this).val();
 			$(list).find(".ui-listview-item").hide();
 			if (filter && filter != " " && filter != "" && filter.length > 0) {
 				clearTimeout(typingTimeout);
@@ -61,7 +62,11 @@
 		.keypress(function(e){
 			if(e.which==13){
 				var a = $(list).find(".ui-listview-item:visible").first().children().attr('desktop');
-				Utils.run_desktop(a);
+        if (a == undefined) {
+				  Utils.run_command("gnome-terminal -e \'" + filter + "\'");
+        } else {
+				  Utils.run_desktop(a);
+        }
 				firstCond();
 			}
 		});
